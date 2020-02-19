@@ -1,3 +1,8 @@
+/* Name: Sean Hampson
+   Date: 18-02-20
+   Reads in a decimal number from user and
+   outputs the number in binary
+*/
 #include <stdio.h>
 
 int main()
@@ -18,6 +23,7 @@ int main()
 		num = quotient;
 
 	}while(quotient != 0);
-
+	
+	getchar();
 	return 0;
 }
