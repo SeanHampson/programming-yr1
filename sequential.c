@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 /* Name: Sean Hampson
    Date: 25/02/2020
    Creates 2 arrays with size varying between 10, 100 and 1000
    Each arra is filled wih random integers and both are compared
    to see how many integers are common in a linear search
 */
+=======
+>>>>>>> fca193deeb0c7818440ca823b5e22b941bf0e855
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -14,6 +17,7 @@
 
 int main()
 {
+<<<<<<< HEAD
     int i, choice; 
     int counter, start_index, index;
 
@@ -22,6 +26,12 @@ int main()
     int array_m100[NUM2], array_n100[NUM2];
     int array_m1000[NUM3], array_n1000[NUM3];
     
+=======
+    int i, choice, counter, start_index, index;
+    int array_m10[NUM1], array_n10[NUM1];
+    int array_m100[NUM2], array_n100[NUM2];
+    int array_m1000[NUM3], array_n1000[NUM3];
+>>>>>>> fca193deeb0c7818440ca823b5e22b941bf0e855
     time_t t;
 
     /* Intializes random number generator */
@@ -59,7 +69,10 @@ int main()
                 }
             }
             printf("are similar in both arrays\n Total similar numbers: %d", counter);
+<<<<<<< HEAD
             break;
+=======
+>>>>>>> fca193deeb0c7818440ca823b5e22b941bf0e855
         }
 
         case 2:
@@ -87,7 +100,10 @@ int main()
                 }
             }
             printf("are similar in both arrays\n Total similar numbers: %d", counter);
+<<<<<<< HEAD
             break;
+=======
+>>>>>>> fca193deeb0c7818440ca823b5e22b941bf0e855
         }
 
         case 3:
