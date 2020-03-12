@@ -6,16 +6,20 @@
 */
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 /* Function Signatures */
-int vowel_count(int*);
-int char_count(int*);
-void cat_string(int*);
+int vowel_count(char*);
+int char_count(char*);
+void cat_string(char*);
 
 int main()
 {
     /* Variable to store user input */
     char string[40] = {0};
+    /* Variables to hold function return values */
+    int no_of_vowels;   
+    int no_of_chars;
 
     /* Reads in string from user */
     printf("Enter a string:\n");
@@ -31,7 +35,7 @@ int main()
     return 0;
 }// END main()
 
-int vowel_count(int* array)
+int vowel_count(char* array)
 {
     /* For loop counter and vowel counter */
     int i, counter = 0;
@@ -52,12 +56,12 @@ int vowel_count(int* array)
     return counter;
 }// END vowel_count()
 
-int char_count(int* array)
+int char_count(char* array)
 {
     return strlen(array);
 }// END char_count()
 
-void cat_string(int* array)
+void cat_string(char* array)
 {
     /* Given string */
     char sentence[40] = "I entered the string ";
